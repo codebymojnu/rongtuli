@@ -1,9 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "./../../hooks/useAuth";
+import useProfile from "./../../hooks/useProfile";
 
 export default function Header() {
   const navigate = useNavigate();
   const { auth, setAuth } = useAuth();
+  const { state } = useProfile();
+  console.log(state?.user?.avatar);
+
+  const user = state?.user ?? auth?.user;
+
   function logout() {
     setAuth({});
     navigate("/login");
@@ -32,12 +38,12 @@ export default function Header() {
             </Link>
             <Link className="flex-center ml-8 gap-3" to="/me">
               <span className="text-lg font-bold lg:text-xl">
-                {auth?.user?.firstName}
+                {user?.firstName}
               </span>
               <img
-                src="./assets/images/avatars/avatar_1.png"
+                src={`${import.meta.env.VITE_SERVER_BASE_URL}/${user.avatar}`}
                 alt="profile"
-                className="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
+                className="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px] rounded-full"
               />
             </Link>
           </div>

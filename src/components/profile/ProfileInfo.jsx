@@ -1,9 +1,11 @@
 import useProfile from "../../hooks/useProfile";
 import Bio from "./Bio";
+import MyPosts from "./MyPosts";
 import ProfileImage from "./ProfleImage";
 
 export default function ProfileInfo() {
   const { state } = useProfile();
+
   return (
     <div className="flex flex-col items-center py-8 text-center">
       <ProfileImage />
@@ -15,6 +17,7 @@ export default function ProfileInfo() {
       </div>
       <Bio />
       <div className="w-3/4 border-b border-[#3F3F3F] py-6 lg:py-8"></div>
+      <MyPosts posts={state?.posts} />
     </div>
   );
 }

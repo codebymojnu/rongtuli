@@ -1,68 +1,71 @@
-import { useEffect, useState } from "react";
-import api from "../../api";
-import useAuth from "../../hooks/useAuth";
-import useProfile from "../../hooks/useProfile";
-// Ensure api is imported correctly
+import React, { useState } from "react";
+import { actions } from "../../actions";
+import useAxios from "../../hooks/useAxios";
+import useProfile from "./../../hooks/useProfile";
 
-export default function Bio() {
+const Bio = () => {
   const { state, dispatch } = useProfile();
-  const { auth } = useAuth();
-  const [bio, setBio] = useState("");
+  const { api } = useAxios();
+
+  const [bio, setBio] = useState(state?.user?.bio);
   const [editMode, setEditMode] = useState(false);
 
-  // Keep `bio` state in sync with `state.user.bio`
-  useEffect(() => {
-    setBio(state?.user?.bio || "");
-  }, [state?.user?.bio]);
-
-  function handleBioEdit() {
-    setEditMode(true);
-  }
-
-  function bioText(e) {
-    setBio(e.target.value);
-  }
-
-  async function handleBioSubmit() {
-    dispatch({ type: "PROFILE_DATA_FETCHING" });
+  const handleBioEdit = async () => {
     try {
-      const response = await api.patch(`/profile/${auth?.user?.id}`, { bio });
+      const response = await api.patch(
+        `${import.meta.env.VITE_SERVER_BASE_URL}/profile/${state?.user?.id}`,
+        { bio }
+      );
+
       if (response.status === 200) {
-        dispatch({ type: "BIO_UPDATED", data: response.data });
+        dispatch({
+          type: actions.profile.BIO_UPDATED,
+          data: response.data,
+        });
       }
-    } catch (error) {
-      dispatch({ type: "PROFILE_DATA_FETCHED_ERROR", error: error.message });
-    } finally {
       setEditMode(false);
+    } catch (err) {
+      dispatch({
+        type: actions.profile.PROFILE_DATA_FETCHED_ERROR,
+        error: err.message,
+      });
     }
-  }
+  };
 
   return (
     <div className="mt-4 flex items-start gap-2 lg:mt-6">
       <div className="flex-1">
-        {editMode ? (
-          <textarea
-            rows={3}
-            cols={54} // Corrected attribute name
-            onChange={bioText}
-            value={bio}
-            className="text-red-500"
-          ></textarea>
+        {!editMode ? (
+          <p className="leading-[188%] text-gray-400 lg:text-lg">
+            {state?.user?.bio}
+          </p>
         ) : (
-          <p className="leading-[188%] text-gray-400 lg:text-lg">{bio}</p>
+          <textarea
+            className='p-2 className="leading-[188%] text-gray-600 lg:text-lg rounded-md'
+            value={bio}
+            rows={4}
+            cols={55}
+            onChange={(e) => setBio(e.target.value)}
+          />
         )}
       </div>
-
-      {editMode ? (
-        <button onClick={handleBioSubmit}>Save</button>
+      {!editMode ? (
+        <button
+          className="flex-center h-7 w-7 rounded-full"
+          onClick={() => setEditMode(true)}
+        >
+          edit
+        </button>
       ) : (
         <button
           className="flex-center h-7 w-7 rounded-full"
           onClick={handleBioEdit}
         >
-          <img src="./assets/icons/edit.svg" alt="Edit" />
+          save
         </button>
       )}
     </div>
   );
-}
+};
+
+export default Bio;

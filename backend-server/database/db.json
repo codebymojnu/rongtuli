@@ -60,10 +60,51 @@
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
           }
+        },
+        {
+          "id": "c9c0087f-bc21-4100-a0e1-d017563d3cbb",
+          "comment": "ab",
+          "createdAt": "2024-12-15T14:08:17.917Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        },
+        {
+          "id": "bcdd1156-3532-4f2c-8a68-15cf15405de9",
+          "comment": "test comment",
+          "createdAt": "2024-12-15T14:09:43.111Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        },
+        {
+          "id": "8fd69d78-edc9-49fe-a60a-f0f5f94b800f",
+          "comment": "another one",
+          "createdAt": "2024-12-15T14:58:45.129Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        },
+        {
+          "id": "75108fa9-858b-4819-a199-253c2adb8db1",
+          "comment": "hello",
+          "createdAt": "2024-12-17T04:50:19.272Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
         }
       ],
       "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+        "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23"
       ],
       "createAt": "2024-02-24T12:17:09.169Z"
     },
@@ -107,10 +148,41 @@
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
           }
+        },
+        {
+          "id": "0e663bb6-7990-4191-a6a9-decfd2ac29d6",
+          "comment": "one new comment added",
+          "createdAt": "2024-12-15T14:10:32.887Z",
+          "author": {
+            "id": "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23",
+            "name": "Mojnu Miah",
+            "avatar": "uploads/avatar/avatar-1734146405336-451485925.jpg"
+          }
+        },
+        {
+          "id": "523687e9-3234-4b3f-a672-05614584a902",
+          "comment": "Test Comment",
+          "createdAt": "2024-12-15T14:50:00.578Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        },
+        {
+          "id": "0f0b7870-e0f6-4b53-bc6f-5652a72535dd",
+          "comment": "Test Comment 2",
+          "createdAt": "2024-12-15T14:50:11.341Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
         }
       ],
       "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
       ],
       "createAt": "2024-02-24T12:18:21.686Z"
     },
@@ -189,7 +261,8 @@
       "likes": [
         "ea168626-058e-49dd-b23c-3000e7bd0172",
         "8fc0f0d6-396a-4ef4-922b-27ef5b4e8526",
-        "1aeef0f0-77ba-456b-8b5b-d4145a9b5410"
+        "1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
       ],
       "createAt": "2024-02-09T12:19:50.876Z"
     },
@@ -220,7 +293,9 @@
         "8fc0f0d6-396a-4ef4-922b-27ef5b4e8526",
         "1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
         "a0e37f88-ffc7-4fc7-952e-81370ff96269",
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23"
       ],
       "createAt": "2024-02-24T12:21:27.644Z"
     },
@@ -235,7 +310,9 @@
         "avatar": "uploads/avatar/avatar-1708770640883-148182382.png"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
+      ],
       "createAt": "2024-02-24T12:29:59.028Z"
     },
     {
@@ -277,7 +354,9 @@
         "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
+      ],
       "createAt": "2024-02-25T06:25:58.990Z"
     },
     {
@@ -472,7 +551,9 @@
         "avatar": null
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
+      ],
       "createAt": "2024-12-06T12:39:15.414Z"
     },
     {
@@ -485,23 +566,133 @@
         "name": "Mojnu Miah",
         "avatar": null
       },
-      "comments": [],
-      "likes": [],
+      "comments": [
+        {
+          "id": "eace6d05-8ce1-4cf7-954e-03e1090e085a",
+          "comment": "Good",
+          "createdAt": "2024-12-16T01:41:12.557Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        },
+        {
+          "id": "71189b43-2ab5-4b31-be07-a5c0cf7016b9",
+          "comment": "Mim vaiya",
+          "createdAt": "2024-12-17T07:44:42.468Z",
+          "author": {
+            "id": "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23",
+            "name": "Mojnu Miah",
+            "avatar": "uploads/avatar/avatar-1734146405336-451485925.jpg"
+          }
+        }
+      ],
+      "likes": [
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23"
+      ],
       "createAt": "2024-12-07T02:00:36.667Z"
     },
     {
-      "id": "b0cba804-ab3d-4ac8-a015-6079d705b97b",
-      "content": "গাছ হাতে মিম ভাইয়া ",
-      "image": "uploads/posts/image-1733712425360-411253893.jpg",
+      "id": "e814d82c-d070-43cb-b27e-adf567ac4845",
+      "content": "a",
+      "image": null,
+      "postType": "text",
+      "author": {
+        "id": "13130da5-5fb3-413c-9d88-bf5ab6a1a533",
+        "name": "MD. MOJNU MIAH",
+        "avatar": null
+      },
+      "comments": [],
+      "likes": [
+        "13130da5-5fb3-413c-9d88-bf5ab6a1a533",
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
+      ],
+      "createAt": "2024-12-17T07:36:32.291Z"
+    },
+    {
+      "id": "8186e550-28e6-4447-91cd-1d71fbb77708",
+      "content": "0000",
+      "image": null,
+      "postType": "text",
+      "author": {
+        "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "name": "Sayma Asha",
+        "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+      },
+      "comments": [
+        {
+          "id": "41b95983-1537-4751-bfb5-4cf2bcb1dfa6",
+          "comment": "test",
+          "createdAt": "2024-12-22T13:25:12.301Z",
+          "author": {
+            "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+            "name": "Sayma Asha",
+            "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+          }
+        }
+      ],
+      "likes": [
+        "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5"
+      ],
+      "createAt": "2024-12-22T09:31:03.723Z"
+    },
+    {
+      "id": "02ff8ec6-5d2f-4e95-84bd-1203d7bdd85b",
+      "content": "manosik osusto ta",
+      "image": null,
+      "postType": "text",
+      "author": {
+        "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "name": "Sayma Asha",
+        "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+      },
+      "comments": [],
+      "likes": [],
+      "createAt": "2024-12-22T12:42:40.263Z"
+    },
+    {
+      "id": "42c1becf-eb3e-41b5-983e-6990a402a316",
+      "content": "amar nanijan",
+      "image": "uploads/posts/image-1734921150812-527250756.jpg",
       "postType": "image",
       "author": {
         "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
         "name": "Sayma Asha",
-        "avatar": null
+        "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
       },
       "comments": [],
       "likes": [],
-      "createAt": "2024-12-09T02:47:05.389Z"
+      "createAt": "2024-12-23T02:32:30.828Z"
+    },
+    {
+      "id": "84c3cfd5-0629-49c7-9d0f-1dd7b6251bfd",
+      "content": "mojnu",
+      "image": "uploads/posts/image-1734921277639-896238821.jpg",
+      "postType": "image",
+      "author": {
+        "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "name": "Sayma Asha",
+        "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+      },
+      "comments": [],
+      "likes": [],
+      "createAt": "2024-12-23T02:34:37.646Z"
+    },
+    {
+      "id": "608578eb-254b-491f-b6c9-74212cac9807",
+      "content": "ami",
+      "image": null,
+      "postType": "text",
+      "author": {
+        "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
+        "name": "Sayma Asha",
+        "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg"
+      },
+      "comments": [],
+      "likes": [],
+      "createAt": "2024-12-23T02:39:30.182Z"
     }
   ],
   "comments": [],
@@ -562,7 +753,7 @@
       "password": "$2b$08$geKH0JWhUGQ0CfhZyjK2DePmsyTXGLyVUuPAf5Sa9MEcDWVKliO3a",
       "firstName": "Mojnu",
       "lastName": "Miah",
-      "avatar": null,
+      "avatar": "uploads/avatar/avatar-1734146405336-451485925.jpg",
       "email": "thisismojnu@gmail.com",
       "user": {
         "id": "a9f2813e-a0a3-4ae0-80a1-570f3d5fbd23",
@@ -602,16 +793,25 @@
           "likes": [],
           "createAt": "2024-12-07T02:00:36.667Z"
         }
-      ]
+      ],
+      "bio": "ami mojnu"
     },
     {
       "id": "c9b2ac8d-92a9-44a8-9a9f-b86ca5f8b1b5",
       "password": "$2b$08$dk8OvDzStsm.UCcfW63AGOGkud0jPmADiTILilJIMWyBQMzZyy3Hy",
       "firstName": "Sayma",
       "lastName": "Asha",
-      "avatar": null,
+      "avatar": "uploads/avatar/avatar-1734146658890-679587268.jpeg",
       "email": "sayma@gmail.com",
-      "bio": "This is Sayman"
+      "bio": "আমি  সায়মা খাতুন আশা, আমি বাংলাদেশি."
+    },
+    {
+      "id": "13130da5-5fb3-413c-9d88-bf5ab6a1a533",
+      "password": "$2b$08$MVJZhgduuSyUOY.yfeFF7eI77mQUzuV9PpeadTmEJ.7zjk2NCLGXO",
+      "firstName": "MD. MOJNU",
+      "lastName": "MIAH",
+      "avatar": null,
+      "email": "mojnu@gmail.com"
     }
   ]
 }
